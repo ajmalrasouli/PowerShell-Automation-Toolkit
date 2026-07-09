@@ -1,0 +1,76 @@
+# ============================
+# PowerShell Automation Toolkit
+# Git Ignore
+# ============================
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# PowerShell Editor Services
+.history/
+
+# PowerShell Module Build
+bin/
+obj/
+output/
+publish/
+
+# Pester Test Results
+TestResults/
+coverage.xml
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# PowerShell
+*.psd1.bak
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Package files
+*.nupkg
+
+# Local settings
+local.settings.json
+
+# Environment files
+.env
+.env.*
+
+# Terraform (future-proofing)
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+
+# Backup files
+*.bak
+*.old
+
+# Rider / JetBrains
+.idea/
+
+# User settings
+*.user
+*.suo
+
+# Generated documentation
+site/
+
+# PowerShell transcripts
+PowerShell_transcript*.txt
