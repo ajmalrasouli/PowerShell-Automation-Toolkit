@@ -1,0 +1,9 @@
+{
+    "Logging": {
+        "LogLevel": "Info"
+    },
+
+    "Azure": {
+        "SubscriptionId": "12345"
+    }
+}
