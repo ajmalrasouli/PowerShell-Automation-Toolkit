@@ -1,0 +1,41 @@
+{
+  "Logging": {
+    "LogLevel": "Info",
+    "LogFile": ".\\Logs\\Toolkit.log"
+  },
+
+  "Toolkit": {
+    "Environment": "Development",
+    "Author": "Ajmal Rasouli",
+    "Version": "0.3.0"
+  },
+
+  "Azure": {
+    "SubscriptionId": "",
+    "TenantId": "",
+    "ResourceGroup": "",
+    "Location": "uksouth"
+  },
+
+  "Microsoft365": {
+    "TenantName": "",
+    "AdminAccount": ""
+  },
+
+  "ActiveDirectory": {
+    "DomainName": "contoso.local",
+    "NetBIOSName": "CONTOSO",
+    "DomainController": "DC01"
+  },
+
+  "HyperV": {
+    "SwitchName": "Default Switch",
+    "VMPath": "C:\\Hyper-V\\Virtual Machines",
+    "VHDPath": "C:\\Hyper-V\\Virtual Hard Disks"
+  },
+
+  "Network": {
+    "DNSServer": "192.168.1.10",
+    "Gateway": "192.168.1.1"
+  }
+}
