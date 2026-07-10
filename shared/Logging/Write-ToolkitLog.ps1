@@ -23,13 +23,13 @@ Suppress console output.
 Returns the generated log object.
 
 .EXAMPLE
-Write-Log -Message "Toolkit started."
+Write-ToolkitLog -Message "Toolkit started."
 
 .EXAMPLE
-Write-Log -Message "Connected to Azure." -Level Success
+Write-ToolkitLog -Message "Connected to Azure." -Level Success
 
 .EXAMPLE
-Write-Log -Message "Backup completed." -LogFile ".\Logs\Toolkit.log"
+Write-ToolkitLog -Message "Backup completed." -LogFile ".\Logs\Toolkit.log"
 
 .NOTES
 Project : PowerShell Automation Toolkit
@@ -38,7 +38,8 @@ Version : 0.2.0
 License : MIT
 #>
 
-function Write-Log {
+
+function Write-ToolkitLog {
 
     [OutputType([PSCustomObject])]
 

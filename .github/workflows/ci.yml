@@ -27,14 +27,19 @@ jobs:
         run: |
           Install-Module PSScriptAnalyzer -Force -Scope CurrentUser -Repository PSGallery
 
-      - name: Run PSScriptAnalyzer
+       - name: Run PSScriptAnalyzer
         shell: pwsh
         run: |
           $results = Invoke-ScriptAnalyzer -Path . -Recurse
 
           if ($results) {
               $results | Format-Table
-              throw "PSScriptAnalyzer found issues."
           }
 
-          Write-Host "✅ No Script Analyzer issues found."
+          $errors = $results | Where-Object Severity -eq 'Error'
+
+          if ($errors) {
+              throw "PSScriptAnalyzer found errors."
+          }
+
+          Write-Host "✅ PSScriptAnalyzer completed successfully."

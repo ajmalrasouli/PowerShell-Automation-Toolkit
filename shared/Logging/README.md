@@ -25,7 +25,7 @@ It is designed to standardize how messages are written across every module in th
 
 | Function | Description |
 |----------|-------------|
-| `Write-Log` | Writes formatted log messages to the console and optionally to a log file. |
+| `Write-ToolkitLog` | Writes formatted log messages to the console and optionally to a log file. |
 
 ---
 
@@ -78,15 +78,15 @@ Example:
 # Basic Usage
 
 ```powershell
-Write-Log -Message "Toolkit started."
+Write-ToolkitLog -Message "Toolkit started."
 
-Write-Log -Message "Connected to Azure." -Level Success
+Write-ToolkitLog -Message "Connected to Azure." -Level Success
 
-Write-Log -Message "Disk space is low." -Level Warning
+Write-ToolkitLog -Message "Disk space is low." -Level Warning
 
-Write-Log -Message "Authentication failed." -Level Error
+Write-ToolkitLog -Message "Authentication failed." -Level Error
 
-Write-Log -Message "Debug information." -Level Debug
+Write-ToolkitLog -Message "Debug information." -Level Debug
 ```
 
 ---
@@ -96,7 +96,7 @@ Write-Log -Message "Debug information." -Level Debug
 Logs can be written to a file by specifying the `LogFile` parameter.
 
 ```powershell
-Write-Log `
+Write-ToolkitLog `
     -Message "Backup completed." `
     -LogFile ".\Logs\Toolkit.log"
 ```
@@ -110,7 +110,7 @@ If the directory does not exist, it is created automatically.
 The `PassThru` parameter returns a structured PowerShell object.
 
 ```powershell
-Write-Log `
+Write-ToolkitLog `
     -Message "Pipeline test." `
     -PassThru
 ```
@@ -132,7 +132,7 @@ This enables seamless integration with other PowerShell commands.
 Example:
 
 ```powershell
-Write-Log `
+Write-ToolkitLog `
     -Message "Server created." `
     -PassThru |
 Export-Csv Logs.csv -NoTypeInformation
@@ -145,7 +145,7 @@ Export-Csv Logs.csv -NoTypeInformation
 ```text
 shared/
 └── Logging/
-    ├── Write-Log.ps1
+    ├── Write-ToolkitLog.ps1
     ├── README.md
     └── examples/
         ├── BasicLogging.ps1
