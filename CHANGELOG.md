@@ -23,3 +23,22 @@ and this project follows [Semantic Versioning](https://semver.org/).
 - Professional repository structure.
 - MIT License.
 - PowerShell-specific `.gitignore`.
+
+
+## [0.3.0] - 2026-07-10
+
+### Added
+
+- Get-ToolkitConfig function
+- JSON configuration loading
+- Configuration validation
+- Logging integration
+- Sample configuration
+- Configuration examples
+- Pester unit tests
+- Documentation
+
+### Improved
+
+- Shared configuration architecture
+- CI validation
