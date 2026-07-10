@@ -1,9 +1,25 @@
 {
-    "Logging": {
-        "LogLevel": "Info"
-    },
+  "Logging": {
+    "LogLevel": "Info",
+    "LogFile": ".\\Logs\\Toolkit.log"
+  },
 
-    "Azure": {
-        "SubscriptionId": "12345"
-    }
+  "Toolkit": {
+    "Environment": "Development",
+    "Author": "Ajmal Rasouli",
+    "Version": "0.3.0"
+  },
+
+  "Azure": {
+    "SubscriptionId": "12345",
+    "TenantId": "",
+    "ResourceGroup": "",
+    "Location": "uksouth"
+  },
+
+  "ActiveDirectory": {
+    "DomainName": "ajmaltech.local",
+    "NetBIOSName": "AJMALTECH",
+    "DomainController": "DC01"
+  }
 }
